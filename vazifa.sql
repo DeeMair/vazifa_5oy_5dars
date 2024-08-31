@@ -1,6 +1,6 @@
 --------------1-Masala-----------------------
 
-create databases vazifa_Soxibjon;
+create database vazifa_Soxibjon;
 show databases;
 use vazifa_Soxibjon;
 create table info_mijoz(MijozID int auto_increment primary key, Ism varchar(50), Shahar varchar(50), Telefon varchar(14));
