@@ -39,7 +39,12 @@ create table buyurtmalar (
 insert into buyurtmalar (mijoz_ismi, mahsulot_nomi, buyurtma_sana, qiymat) values ("Azizbek", "iphone x", '2023-03-15', 4500000.00), ("Elnurbek", "iphone 14", '2023-03-15', 9500999.00), ("Soxibjon", "iphone 13", '2023-03-15', 8700000.00), ("Abdulla", "iphone 14 pro max", '2023-03-18', 12500000.00);
 select * from buyurtmalar;
 select * from buyurtmalar where year(buyurtma_sana) = 2023;
-select * from buyurtmalar group by mijoz_ismi order by sum(qiymat) desc limit 1;
+select mijoz_ismi, sum(qiymat) as jami_qiymat
+from buyurtmalar
+group by mijoz_ismi
+order by jami_qiymat desc
+limit 1;
+
 
 -- ---------------4-Masala------------------------
 
