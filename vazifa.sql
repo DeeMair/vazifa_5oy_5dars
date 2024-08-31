@@ -9,7 +9,7 @@ VALUES
 ("Olim", "Toshkent", "998901234567"),
 ("Shahnoza", "Samarqand", "998912345678"),
 ("Murod", "Toshkent", "998933456789");
-select  from info_mijoz;
+select * from info_mijoz;
 SELECT * FROM info_mijoz WHERE Shahar = "Toshkent";
 
 -- -------------2-MAsala------------
